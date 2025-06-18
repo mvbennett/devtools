@@ -2,7 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const secrets = require("./secrets");
 
-const regex = secrets.regex();
+// regex for matching the urls
+const regex = secrets.regex;
 
 function getJSONData() {
   const dataFile = path.resolve(__dirname, "target.json");

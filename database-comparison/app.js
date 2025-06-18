@@ -2,7 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const secrets = require("./secrets.js");
 
-const allUrls = secrets.allUrls();
+// an array with all the base urls to be compared to
+const allUrls = secrets.allUrls;
 
 function getJSONData() {
   const dataFile = path.resolve(__dirname, "target.json");
